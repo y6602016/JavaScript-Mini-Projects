@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/Css/style.css">
+    <link rel="shortcut icon" href="havicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+    <title>JavsScript Practice</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button> 
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" onclick="generateCat()"> Generate Cat</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-container-3" id="flex-box-rps">
+            <img id="rock" src="https://static.thenounproject.com/png/88661-200.png" alt="rock" onclick="rpsGame(this)">
+            <img id="paper" src="https://i.dlpng.com/static/png/5008684-rock-paper-scissors-icons-download-free-vector-icons-noun-project-rock-paper-scissors-png-200_200_preview.png" alt="paper" onclick="rpsGame(this)">
+            <img id="scissors" src="https://static.thenounproject.com/png/477919-200.png" alt="scissors" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+
+    <div class="container-4">
+        <h2>Challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-container-4">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5: Blakjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+        <div class="container">
+            <div class="flex-blackjack-row-1">
+                <div id="your-box">
+                    <h2>You: <span id="your-blackjack-result">0</span></h2>
+                </div>
+    
+                <div id="dealer-box">
+                    <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+                </div>
+            </div>
+    
+    
+            <div class="flex-blackjack-row-2">
+                <div>
+                    <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                    <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                    <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+                </div>
+            </div>
+        </div>    
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="static/JavaScript/app.js"></script>
+</body>
+</html>
